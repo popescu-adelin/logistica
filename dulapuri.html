@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO de adaugat fonturile  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind&display=swap"
+      rel="stylesheet"
+    />
+    <title>Logistics Application</title>
+    <link rel="stylesheet" href="css\dulapuri.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="top-navbar">
+        <a href="#"><img src="images\BESTCJ_logo.png" class="logo" alt="" /></a>
+        <a class="top-navbar-a" href="signup.html">Log in</a>
+      </div>
+    </section>
+
+    <div class="left_side">
+      <div class="side_navbar">
+        <div class="left_side_menu">
+          <img src="images/megaphone.png" style="width: 30px" alt="" />
+          <p>
+            <a class="left_side_menu-element" class="active" href="index.html"
+              >General</a
+            >
+          </p>
+        </div>
+        <div class="left_side_menu">
+          <img src="images/megaphone.png" style="width: 30px" alt="" />
+          <p>
+            <a class="left_side_menu-element" href="dulapuri.html">Dulapuri</a>
+          </p>
+        </div>
+
+        <ul class="lista-dulapuri">
+          <li>Dulap1</li>
+          <li>Dulap2</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <h5>Content of PR1</h5>
+      <div class="content_dulap">
+        <div class="filters">
+          <div class="dropdown">
+            <p>Eveniment</p>
+            <div class="caret"></div>
+          </div>
+          <div class="dropdown">
+            <p>Categorie</p>
+            <div class="caret"></div>
+          </div>
+        </div>
+        <div class="content-box">
+          <div class="row content-box-header">
+            <div class="col-1 content-element"><p>Type</p></div>
+            <div class="col-3 content-element"><p>Name</p></div>
+            <div class="col-7 content-element"><p>Quantity</p></div>
+          </div>
+          <div class="content">
+            <div class="row content-item">
+              <div class="col-1 content-element">
+                <img src="images/sticker.png" alt="sticker" />
+              </div>
+              <div class="col-3 content-element"><p>Item</p></div>
+              <div class="col-7 content-element"><p>Cantitate</p></div>
+            </div>
+            <div class="row content-item">
+                <div class="col-1 content-element">
+                  <img src="images/sticker.png" alt="sticker" />
+                </div>
+                <div class="col-3 content-element"><p>Item</p></div>
+                <div class="col-7 content-element"><p>Cantitate</p></div>
+              </div>
+              <div class="row content-item">
+                <div class="col-1 content-element">
+                  <img src="images/sticker.png" alt="sticker" />
+                </div>
+                <div class="col-3 content-element"><p>Item</p></div>
+                <div class="col-7 content-element"><p>Cantitate</p></div>
+              </div>
+              <div class="row content-item">
+                <div class="col-1 content-element">
+                  <img src="images/sticker.png" alt="sticker" />
+                </div>
+                <div class="col-3 content-element"><p>Item</p></div>
+                <div class="col-7 content-element"><p>Cantitate</p></div>
+              </div>
+              <div class="row content-item">
+                <div class="col-1 content-element">
+                  <img src="images/sticker.png" alt="sticker" />
+                </div>
+                <div class="col-3 content-element"><p>Item</p></div>
+                <div class="col-7 content-element"><p>Cantitate</p></div>
+              </div>
+              <div class="row content-item">
+                <div class="col-1 content-element">
+                  <img src="images/sticker.png" alt="sticker" />
+                </div>
+                <div class="col-3 content-element"><p>Item</p></div>
+                <div class="col-7 content-element"><p>Cantitate</p></div>
+              </div>
+             
+          </div>
+        </div>
+      </div>
+      <!-- <div id="search_bar_div">
+        <form id="search_bar" action="">
+          <button type="submit"><img src="images\search.png" /></button>
+          <input type="text" placeholder="Caută în sediu" name="search" />
+        </form>
+      </div> -->
+    </div>
+    <!-- TODO Numeste clase -->
+    <div class="chat">
+      <div id="closed_chat">
+        <button class="chat_close_button">
+          <img src="images\bubble-chat.png" />Mesaj pentru cancelar
+        </button>
+      </div>
+      <div class="hidden">
+        <div id="open_chat">
+          <button class="chat_close_button">
+            <img src="images\bubble-chat.png" />Mesaj pentru cancelar
+          </button>
+        </div>
+        <div class="message-box"></div>
+        <div class="typebox-container">
+          <div class="typebox">
+            <input type="text" id="typebox_input" />
+            <button id="send_message"><img src="images\send.png" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

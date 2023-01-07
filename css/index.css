@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  /* border: solid 1px red; */
+}
+.header {
+  background: #00afc1;
+}
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.top-navbar-a {
+  text-decoration: none;
+  font-family: "Hind", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.left_side {
+  position: absolute;
+  left: 0px;
+  width: 250px;
+  height: 100vh;
+  background: #0093ab;
+}
+.side_navbar {
+  margin: 10px 20px;
+}
+.left_side_menu {
+  display: flex;
+  align-items: center;
+}
+.left_side_menu-element {
+  text-decoration: none;
+  font-family: "Hind", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  transition: 0.3s ease;
+  margin-left: 10px;
+}
+.lista-dulapuri {
+  color: white;
+  /* list-style-type:none; */
+}
+.lista-dulapuri li {
+  text-decoration: none;
+  font-family: "Hind", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  /* line-height: 30px; */
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.main {
+  min-height: 100vh;
+  /* background-color: black; */
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.announcements_area {
+  font-family: "Hind", sans-serif;
+  width: 90%;
+  /* height: 203px; */
+  background: #f2f7fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  padding: 5px 20px;
+  margin: 30px 0;
+}
+.announcements_area-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 51px;
+  text-align: center;
+  color: #006778;
+  display: flex;
+  align-items: center;
+}
+.announcements_area-title h4 {
+  margin-left: 15px;
+}
+.anunturi {
+  margin: 20px 10px;
+  color: #0093ab;
+  line-height: 24px;
+}
+.anunt {
+  display: flex;
+  justify-content: space-between;
+}
+#lista-anunturi {
+  text-decoration: underline;
+}
+.hidden {
+  display: none;
+}
+.chat {
+  font-size: 0;
+  position: fixed;
+  /* width: 350px; */
+  height: 305px;
+  right: 0;
+  bottom: 0px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+.chat_close_button {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #00afc1;
+  border-radius: 30px 30px 0px 0px;
+  border: none;
+
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.message-box {
+  width: 100%;
+  height: 203px;
+  display: flex;
+  background: #f2f7fa;
+}
+.typebox-container{
+  background: #f2f7fa;
+}
+.typebox {
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+.typebox input {
+  border: none;
+  outline: none;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 30px 0px 0px 30px;
+
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 38px;
+
+  color: #006778;
+}
+
+.typebox button {
+  margin-right: auto;
+  width: 62px;
+  height: 38px;
+  border: 0;
+
+  background: #00afc1;
+  border-radius: 0px 30px 30px 0px;
+}
+/* 
+// pentru cos de cumparaturi
+.top_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.top_navbar li a {
+  text-decoration: none;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.top_navbar li a:hover {
+  color: #006778;
+}
+
+#left_side {
+  position: absolute;
+  left: 0px;
+  width: 384px;
+  height: 100vh;
+  background: #0093ab;
+}
+
+#left_side li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#side_navbar li a {
+  text-decoration: none;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+#side_navbar li a:hover {
+  color: #929b9d;
+}
+.active {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.27);
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+.announcements_area {
+  display: flex;
+  align-items: start;
+  position: absolute;
+  width: 920px;
+  height: 203px;
+  left: 431px;
+  top: 107px;
+  background: #f2f7fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  padding: 5px 20px;
+}
+
+#announcements_area h4 {
+  position: absolute;
+  left: 100px;
+  top: -40px;
+
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 51px;
+  text-align: center;
+
+  color: #006778;
+}
+
+#schița_sediului h4 {
+  position: absolute;
+  width: 261px;
+  height: 44px;
+  left: 431px;
+  top: 300px;
+
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 51px;
+  text-align: center;
+
+  color: #006778;
+}
+
+#search_bar_div {
+  position: absolute;
+  width: 245px;
+  height: 40px;
+  left: 1146px;
+  top: 350px;
+  display: start;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+
+#search_bar {
+  width: 245px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #f2f7fa;
+}
+
+#search_bar input {
+  background: transparent;
+  flex: 1;
+  border: none;
+  outline: none;
+
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 38px;
+
+  color: #006778;
+}
+
+::placeholder {
+  color: #006778;
+}
+
+#search_bar button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#chat_div .hidden {
+  display: none;
+}
+
+#chat_div {
+  font-size: 0;
+  display: none;
+  position: fixed;
+  width: 350px;
+  height: 305px;
+  left: 1070px;
+  right: 100px;
+  bottom: 0px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+
+#chat_open_button {
+  width: 290px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #00afc1;
+  border-radius: 30px 30px 0px 0px;
+  border: none;
+
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#messages {
+  width: 250px;
+  height: 203px;
+  display: flex;
+  background: #f2f7fa;
+}
+
+#chat_close_button {
+  width: 290px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #00afc1;
+  border-radius: 30px 30px 0px 0px;
+  border: none;
+
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#typebox {
+  width: 290px;
+  margin: 0 auto;
+  background-color: #f2f7fa;
+  display: flex;
+  align-items: center;
+}
+
+#typebox input {
+  margin-left: auto;
+  border: none;
+  outline: none;
+
+  width: 200px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 30px 0px 0px 30px;
+
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 38px;
+
+  color: #006778;
+}
+
+#typebox button {
+  margin-right: auto;
+  width: 62px;
+  height: 38px;
+  border: 0;
+
+  background: #00afc1;
+  border-radius: 0px 30px 30px 0px;
+} */

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO de adaugat fonturile  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind&display=swap"
+      rel="stylesheet"
+    />
+    <title>Logistics Application</title>
+    <link rel="stylesheet" href="css\index.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="top-navbar">
+        <a href="#"><img src="images\BESTCJ_logo.png" class="logo" alt="" /></a>
+        <a class="top-navbar-a" href="signup.html">Log in</a>
+      </div>
+    </section>
+
+    <div class="left_side">
+      <div class="side_navbar">
+        <div class="left_side_menu">
+          <img src="images/megaphone.png" style="width: 30px" alt="" />
+          <p>
+            <a class="left_side_menu-element" class="active" href="index.html"
+              >General</a
+            >
+          </p>
+        </div>
+        <div class="left_side_menu">
+          <img src="images/megaphone.png" style="width: 30px" alt="" />
+          <p>
+            <a class="left_side_menu-element" href="dulapuri.html">Dulapuri</a>
+          </p>
+        </div>
+
+        <ul class="lista-dulapuri">
+          <li>Dulap1</li>
+          <li>Dulap2</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <section class="announcements_area">
+        <div class="announcements_area-title">
+          <img src="images\megaphone.png" class="logo" alt="" />
+          <h4>Anunțuri</h4>
+        </div>
+
+        <div class="anunturi">
+          <div class="anunt">
+            <p>Anunt 1</p>
+            <p>12/11/2022</p>
+          </div>
+          <div class="anunt">
+            <p>Anunt 1</p>
+            <p>12/11/2022</p>
+          </div>
+          <div class="anunt">
+            <p>Anunt 1</p>
+            <p>12/11/2022</p>
+          </div>
+          <div class="anunt">
+            <p>Anunt 1</p>
+            <p>12/11/2022</p>
+          </div>
+          <p id="lista-anunturi">View more...</p>
+        </div>
+      </section>
+      <div class="schita-sediu">
+        <section id="schița_sediului">
+          <h4>Schița sediului</h4>
+          <div class="schita">
+            <!-- TODO De pus schita cu sediul -->
+          </div>
+        </section>
+      </div>
+      <!-- <div id="search_bar_div">
+        <form id="search_bar" action="">
+          <button type="submit"><img src="images\search.png" /></button>
+          <input type="text" placeholder="Caută în sediu" name="search" />
+        </form>
+      </div> -->
+    </div>
+    <!-- TODO Numeste clase -->
+    <div class="chat">
+      <div id="closed_chat" class="hidden">
+        <button id="chat_open_button">
+          <img src="images\bubble-chat.png" />Mesaj pentru cancelar
+        </button>
+      </div>
+      <div>
+        <div id="open_chat">
+          <button class="chat_close_button">
+            <img src="images\bubble-chat.png" />Mesaj pentru cancelar
+          </button>
+        </div>
+        <div class="message-box"></div>
+        <div class="typebox-container">
+          <div class="typebox">
+            <input type="text" id="typebox_input" />
+            <button id="send_message"><img src="images\send.png" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
